@@ -17,7 +17,7 @@ MATLAB model for ubiquitin chain reaction detailed in the paper:
 Run `Script_plot_model.m` with the defined rate constants.
 
 ### Plot species concentration vs time at different E1/E2/E3 concentration
-Run `Script_simulation.m` with the defined rate constants. Modify the code in `lib/plot_model_conc.m` to simulate concnetrations of different species.
+Run `Script_simulation.m` with the defined rate constants. Modify the code in `lib/plot_model_conc.m` to simulate concentrations of different species.
 
 ### Run simulated annealing to optimize rate constants
 Run `Script_optimise_rate_constants.m` to infer rate constants from the data defined in `raw_data` folder. Change the epoch number in the script to run from multiple initial states.
