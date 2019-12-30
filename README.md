@@ -35,5 +35,5 @@ The MCMC package is written by Marko Laine and is downloaded from:
 https://mjlaine.github.io/mcmcstat/
 
 # License
-This software package is under the MIT License. See LICENSE.txt for details.
+This software package is under the MIT License. See LICENSE file for details.
 
