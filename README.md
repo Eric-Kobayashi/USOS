@@ -1,9 +1,11 @@
 # USOS - Ubiquitin System ODE Simulator
-author: Eric Hidari
-date: 30 December 2019
+Author: Eric Hidari
+
+Date: 30 December 2019
 
 MATLAB model for ubiquitin chain reaction detailed in the paper:
 **A general _in vitro_ assay to study enzymatic activities of the ubiquitin system**, *Biochemistry*, under review
+
  USOS uses machine learning method to infer the rate constants in the ODE functions given the FRET measurement data. Namely, simulated annealing, an advanced Markov Chain Monte Carlo (MCMC) algorithm is applied here. 
 
 ## Prerequisite
@@ -19,10 +21,12 @@ Run Script_simulation.m with the defined rate constants. Modify the code in lib/
 
 ### Run simulated annealing to optimize rate constants
 Run Script_optimise_rate_constants.m to infer rate constants from the data defined in raw_data folder. Change the epoch number in the script to run from multiple initial states.
+
 The raw_data csv file is arranged as follows:
 - The first column is the enzyme concentrations, 
 - The second column is the measured initial reaction rates, 
 - The third column is the standard deviation of the measured rates (unused).
+
 The optimization algorithm simulated annealing can accept lower/upper bounds of the rate constants and the initial temperature as the parameters. These can be modified in Vary_all_E_model.m
 
 ### Run MCMC to estimate rate constants posterior distribution
