@@ -14,23 +14,23 @@ MATLAB model for ubiquitin chain reaction detailed in the paper:
 
 ## Usage
 ### Plot initial reaction rate vs E1/E2/E3 concentration
-Run Script_plot_model.m with the defined rate constants.
+Run `Script_plot_model.m` with the defined rate constants.
 
 ### Plot species concentration vs time at different E1/E2/E3 concentration
-Run Script_simulation.m with the defined rate constants. Modify the code in lib/plot_model_conc.m to simulate concnetrations of different species.
+Run `Script_simulation.m` with the defined rate constants. Modify the code in `lib/plot_model_conc.m` to simulate concnetrations of different species.
 
 ### Run simulated annealing to optimize rate constants
-Run Script_optimise_rate_constants.m to infer rate constants from the data defined in raw_data folder. Change the epoch number in the script to run from multiple initial states.
+Run `Script_optimise_rate_constants.m` to infer rate constants from the data defined in `raw_data` folder. Change the epoch number in the script to run from multiple initial states.
 
-The raw_data csv file is arranged as follows:
+The `raw_data` csv file is arranged as follows:
 - The first column is the enzyme concentrations, 
 - The second column is the measured initial reaction rates, 
 - The third column is the standard deviation of the measured rates (unused).
 
-The optimization algorithm simulated annealing can accept lower/upper bounds of the rate constants and the initial temperature as the parameters. These can be modified in Vary_all_E_model.m
+The optimization algorithm simulated annealing can accept lower/upper bounds of the rate constants and the initial temperature as the parameters. These can be modified in `lib/Vary_all_E_model.m`
 
 ### Run MCMC to estimate rate constants posterior distribution
-Alternatively, one can run Metropolis MCMC algorithm to observe the posterior distribution of the rate constants given the data in a Bayesian approach. Run Script_mcmc.m and change the chain length (nsimu) to generate a large number of posterior observations. 
+Alternatively, one can run Metropolis MCMC algorithm to observe the posterior distribution of the rate constants given the data in a Bayesian approach. Run `Script_mcmc.m` and change the chain length (`nsimu`) to generate a large number of posterior observations. 
 
 ## Dependency
 The Metropolis MCMC (mcmcstat) package is written by Marko Laine and is downloaded from:
