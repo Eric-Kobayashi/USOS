@@ -54,10 +54,6 @@ for i=1:length(e)
             enzyme_label = 'CHIP';
             err = table2array(E3_T(:, 3));
             cl = [0 0.7 0];
-        case 0
-            enzyme_label = 'Ub';
-            err = table2array(Ub_T(:, 3));
-            cl = 'blue';
     end 
     errorbar(x0{i}*1e6, y0{i}*1e6, err*1e6, 's',...
     'color', cl, 'MarkerFaceColor',cl,...
