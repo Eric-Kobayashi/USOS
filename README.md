@@ -4,7 +4,7 @@ Author: Eric Hidari
 Date: 30 December 2019
 
 MATLAB model for ubiquitin chain reaction detailed in the paper:
-**A general _in vitro_ assay to study enzymatic activities of the ubiquitin system**, *Biochemistry*, under review
+**A general _in vitro_ assay to study enzymatic activities of the ubiquitin system**, *Biochemistry*, 2020 59 (7), 851-861, doi: 10.1021/acs.biochem.9b00602
 
  USOS uses machine learning method to infer the rate constants in the ODE functions given the FRET measurement data. Namely, simulated annealing, an advanced Markov Chain Monte Carlo (MCMC) algorithm is applied here. 
 
